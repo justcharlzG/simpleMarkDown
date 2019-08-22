@@ -91,12 +91,12 @@ func (r *Row) Add(text string) *Row {
 }
 
 func (r *Row) Bold(text string) *Row {
-	r.string += handleWord("**%s**", text)
+	r.string += handleWord(" **%s** ", text)
 	return r
 }
 
 func (r *Row) Italic(text string) *Row {
-	r.string += handleWord("*%s*", text)
+	r.string += handleWord(" *%s* ", text)
 	return r
 }
 
