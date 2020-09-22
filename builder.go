@@ -72,7 +72,7 @@ func (b *Builder) AddUoList(list []*Row) *Builder {
 // AddList 有序列表
 func (b *Builder) AddOList(list []*Row) *Builder {
 	for i, r := range list {
-		b.content = append(b.content, fmt.Sprintf("%d. %s", i, r.string))
+		b.content = append(b.content, fmt.Sprintf("%d. %s", i + 1, r.string))
 	}
 	b.content = append(b.content, "\n")
 
